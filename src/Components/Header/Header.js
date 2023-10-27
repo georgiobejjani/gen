@@ -17,9 +17,9 @@ export default function Header() {
     }
   };
 
-  //   const toggleSubList = () => {
-  //   setSublistOpen(!sublistOpen);
-  // };
+    const toggleSubList = () => {
+    setSublistOpen(!sublistOpen);
+  };
 
 
   return (
@@ -40,7 +40,7 @@ export default function Header() {
             }
           >
             <ul className="header-container__list">
-              {/* <li
+              <li
                 className={
                   "header-container__item " + [sublistOpen ? "arrowopen" : ""]
                 }
@@ -66,7 +66,7 @@ export default function Header() {
                     <Link className="header-container__link">subitem1</Link>
                   </li>
                 </ul>
-              </li> */}
+              </li>
 
               <li className="header-container__item">
                 <Link className="header-container__link" to='/team'>news</Link>

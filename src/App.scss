@@ -34,4 +34,39 @@ body {
     margin: auto;
 }
 
+.test2 {
+font-weight: 400;
+font-size: 40px;
+text-align: center;
+&::after {
+  content: ' News';
+  color: #0f7f40;
+}
+}
+
+.test1 {
+
+  width: 40%;
+  min-height: 400px;
+  text-align: justify;
+  margin:10px auto;
+border: 2px solid black;
+padding: 10px;
+  // &__paragraphe {
+  //   width: 80%;
+  // }
+  &__flexbox {
+    @include flex(row,nowrap,space-around)
+  }
+  @media #{$mobile} {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+.imagetest {
+  width: 45%;
+}
+.flexContainer {
+  @include flex(row,wrap,space-between)
+}
 

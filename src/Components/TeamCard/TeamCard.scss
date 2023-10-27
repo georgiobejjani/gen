@@ -2,7 +2,7 @@
 
 .teamCard {
   width: 400px;
-  height: 520px;
+  min-height: 550px;
   margin: 10px auto 10px auto;
   padding: 10px;
   box-sizing: border-box;
@@ -25,6 +25,11 @@
   &__textInfo {
     width: 80%;
     font-size: 14px;
+  }
+  &__linkedinLogo {
+    height: 20px;
+    display: block;
+    margin: auto;
   }
 &__info {
   margin-top: 10px;

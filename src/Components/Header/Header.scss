@@ -73,31 +73,31 @@
     &:first-child {
       margin-left: 0;
       position: relative;
-      // &::after {
-      //   content: "";
-      //   position: absolute;
-      //   top: 10px;
-      //   right: -7px;
-      //   width: 5px;
-      //   height: 5px;
-      //   margin-left: 2px;
-      //   margin-bottom: 10px;
-      //   border: 2px solid $black;
-      //   border-bottom: none;
-      //   border-left: none;
-      //   transform: rotate(135deg);
-      //   transition: all ease-out 0.2s;
-      // }
-      // &:hover {
-      //   @media screen and (min-width: 768px) {
-      //       &::after {
-      //         top: 12px;
-      //         margin-bottom: 0px;
-      //         transition: all ease-out 0.2s;
-      //         transform: rotate(315deg);
-      //       }
-      //   }
-      // }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        right: -7px;
+        width: 5px;
+        height: 5px;
+        margin-left: 2px;
+        margin-bottom: 10px;
+        border: 2px solid $black;
+        border-bottom: none;
+        border-left: none;
+        transform: rotate(135deg);
+        transition: all ease-out 0.2s;
+      }
+      &:hover {
+        @media screen and (min-width: 768px) {
+            &::after {
+              top: 12px;
+              margin-bottom: 0px;
+              transition: all ease-out 0.2s;
+              transform: rotate(315deg);
+            }
+        }
+      }
     }
     @media #{$mobile} {
       margin: 20px auto 20px auto;

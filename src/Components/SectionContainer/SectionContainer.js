@@ -98,6 +98,7 @@ export default function SectionContainer() {
               peopleText="Co-Direcotr  of Harvard Healthcare Association – ME Chapter"
               experienceText="Brings over 30 years of experience, with a  successful track record at renowned Corporations like VP Abbvie, Abbott and Arthur Anderson"
               img={ceo_Photo}
+              profile="https://www.linkedin.com/in/abboud-bejjani-971504511816?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
               name="Aboud Bejjani"
               role="Chief Executive Officer"
             />
@@ -108,6 +109,7 @@ export default function SectionContainer() {
               experienceText="Former IBM Director of Strategic  Partnerships, specializing in AI and early  skin cancer detection."
               networkText="Co-founder of Mawitessia, a JV initiative  with Mawi DNA & Biotessia aimed for the  African market"
               img={VP}
+              profile="https://www.linkedin.com/in/hichamjorio?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
               name="Hicham Jorio"
               role="VP Business Development"
             />
@@ -117,6 +119,7 @@ export default function SectionContainer() {
               peopleText="Investor Relations Director at Mawitessia"
               experienceText="Former fraud analyst expert at CIBC in  Canada & Former strategy consultant for  Azenta Life Sciences, Silicon Valley Bank & U.S Bank."
               img={investor}
+              profile="https://www.linkedin.com/in/lina-anwar-8b4543171?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
               name="Lina Anwar"
               role="Investor Relations Director"
             />
@@ -131,6 +134,13 @@ export default function SectionContainer() {
             <a href="https://spireadvisorygroup.com/" target="_blank" rel="noreferrer">
             <img
               src={spireadvisoryLogo}
+              alt="partnerLogo"
+              className="sectionContainer__image"
+            />
+            </a>
+            <a href="https://www.mawidna.com/" target="_blank" rel="noreferrer">
+            <img
+              src={mawiLogo}
               alt="partnerLogo"
               className="sectionContainer__image"
             />
@@ -156,13 +166,7 @@ export default function SectionContainer() {
               className="sectionContainer__image"
             />
             </a>
-            <a href="https://www.mawidna.com/" target="_blank" rel="noreferrer">
-            <img
-              src={mawiLogo}
-              alt="partnerLogo"
-              className="sectionContainer__image"
-            />
-            </a>
+          
           </div>
         </div>
       </div>
