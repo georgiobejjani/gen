@@ -1,0 +1,30 @@
+@import './style.scss';
+
+.partners-page {
+    &__menu {
+        width: 100%;
+        padding: 0;
+        margin: 20px auto 0;
+        @include flex(row,wrap,space-evenly);
+    }
+    &__menuItem {
+        width: 200px;
+        background-color: $white;
+        text-align: center;
+        padding: 15px;
+        font-size: 16px;
+        color: #201e5f;
+        cursor: pointer;
+        border: 1px solid #201e5f;
+        border-radius: 15px;
+        box-sizing: border-box;
+        list-style: none;
+        margin-top:20px;
+    }
+    .activatedItem {
+        background-color: #201e5f;
+        border: 1px solid #201e5f;
+        color: $white;
+        box-sizing: border-box;
+    }
+}

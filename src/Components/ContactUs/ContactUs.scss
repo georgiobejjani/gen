@@ -1,0 +1,142 @@
+@import "../../sass/style.scss";
+
+.contactUsItem {
+  display: block;
+  background-color: $white;
+  box-sizing: border-box;
+  width: 250px;
+  padding: 20px;
+  margin: 15px 0;
+  &__wrapper {
+    @include flex(row, nowrap, flex-start);
+  }
+  &__imageWrapper {
+    background-color: #fff3f7;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    position: relative;
+  }
+  &__image {
+    height: 30px;
+    @include center_middle_align();
+    position: absolute;
+  }
+  &__infoContainer {
+    display: block;
+    margin-left: 20px;
+  }
+  &__label {
+    color: $black;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  &__value {
+    color: $lightGrey;
+    font-size: 14px;
+  }
+}
+
+.contactusBlock {
+  position: relative;
+  background-color: $white;
+  padding: 20px;
+  width: 45%;
+  margin-left: 50px;
+  box-sizing: border-box;
+  &__title {
+    font-weight: 500;
+    color: $black;
+  }
+  &__paragraphe {
+    color: $lightGrey;
+  }
+  &__inputWrapper {
+    @include flex(row, nowrap, space-between);
+  }
+  &__first-block,
+  &__second-block {
+    width: 45%;
+  }
+  &__inputField {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border: 0.5px solid $lightGrey;
+    border-radius: 2px;
+    outline: none;
+  }
+  &__textArea {
+    width: 100%;
+    min-height: 150px;
+    resize: vertical;
+    border: 0.5px solid $lightGrey;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin-top: 20px;
+    padding: 15px;
+    @media #{$mobile} {
+      border-radius: 20px;
+    }
+  }
+  &__submitBtn {
+    background-color: $lightOrange;
+    color: $white;
+    border: 1px solid $lightOrange;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    &:hover {
+    background-color: $white;
+    color: $lightOrange;
+    border: 1px solid $lightOrange;
+    }
+  }
+}
+
+.returnMessage {
+  position: fixed;
+  z-index: 1;
+  top: 80px;
+  right: 0;
+  display: block;
+  background-color: #dcf3d6;
+  box-sizing: border-box;
+  border: 1px solid #c7dfb9;
+  padding: 15px;
+  margin: 15px 0;
+  &__wrapper {
+    @include flex(row, nowrap, flex-start);
+  }
+  &__imageWrapper {
+    background-color: #c7dfb9;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    position: relative;
+  }
+  &__image {
+    height: 20px;
+    @include center_middle_align();
+    position: absolute;
+  }
+  &__infoContainer {
+    display: block;
+    margin-left: 20px;
+  }
+  &__label {
+    color: #647b5d;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  &__value {
+    color: #647b5d;
+    font-size: 14px;
+  }
+}

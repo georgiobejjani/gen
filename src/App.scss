@@ -1,0 +1,37 @@
+@import "sass/style.scss";
+@import './Components/Header/Header.scss';
+@import './Components/ContactUs/ContactUs.scss';
+@import './Components/Hero/Hero.scss';
+@import './sass/ContactUsPage.scss';
+@import './Components/Loader/Loader.module.scss';
+@import './Components/TeamCard/TeamCard.scss';
+@import './Components/AboutUs/AboutUs.scss';
+@import './Components/Footer/Footer.scss';
+@import './Components/SectionContainer/SectionContainer.scss';
+@import './sass/Partners.scss';
+@import './Components/PartnerCard/partnerCard.scss';
+body {
+  cursor: url('./assets/double-helix-svgrepo-com.svg') 16 16, auto;
+    padding: 0;
+    margin: 0;
+    font-family: $secondaryFont;
+    &.team-open {
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          background: rgba(0, 0, 0, 0.56);
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          z-index: 10;
+        }
+      }
+}
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+$mainFont: 'Roboto', sans-serif;
+$secondaryFont: 'Rubik', sans-serif;
+$black: black;
+$white: white;
+$lightOrange: #ffa500;
+$lightGrey: #c3c3c3;
+// Media queries
+$minimobile: "(max-width: 345px)";
+$smallmobile: "(max-width: 359px)";
+$mediummobile: "(max-width: 390px)";
+$mobile: "(max-width: 768px)";
+$mobileP: "(max-width: 479px)"; //Mobile - Portrait
+$mobileL: "(min-width: 480px) and (max-width: 767px)"; //Mobile - Landscape
+$nonMob: "(min-width: 768px)";
+$nonPortable: "(min-width: 992px)";
+$tablet: "(min-width: 768px) and (max-width: 991px)";
+$smallDesktop: "(min-width: 992px) and (max-width: 1199px)";
+$desktop: "(min-width: 1200px)";
+$largeDesktop: "(min-width: 1366px)";
+$mobTab: "(max-width: 991px)";
+$tabDesk: "(min-width: 768px) and (max-width: 1199px)";
+$nonDesk: "(max-width: 1199px)";
+$ipad: "(device-width: 768px) and (device-height: 1024px)";
