@@ -54,22 +54,19 @@ export default function Header() {
                   }
                 >
                   <li className="header-container__subitem">
-                    <Link className="header-container__link">subitem1</Link>
+                    <Link className="header-container__link" to="/aboutus">About us</Link>
                   </li>
                   <li className="header-container__subitem">
-                    <Link className="header-container__link">subitem1</Link>
+                    <Link className="header-container__link" to="/team">Management Team</Link>
                   </li>
                   <li className="header-container__subitem">
-                    <Link className="header-container__link">subitem1</Link>
-                  </li>
-                  <li className="header-container__subitem">
-                    <Link className="header-container__link">subitem1</Link>
+                    <Link className="header-container__link" to="/capabilities">Capabilities</Link>
                   </li>
                 </ul>
               </li>
 
               <li className="header-container__item">
-                <Link className="header-container__link" to='/team'>news</Link>
+                <Link className="header-container__link" to='/news'>news</Link>
               </li>
               <li className="header-container__item">
                 <Link className="header-container__link" to="/partners">partners</Link>

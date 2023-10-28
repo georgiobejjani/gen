@@ -1,0 +1,27 @@
+@import "../../sass/style.scss";
+.news-container {
+  width: 80%;
+  min-height: 400px;
+  text-align: justify;
+  margin: 10px auto;
+  border: 2px solid #201e5f;
+  border-radius: 15px;
+  padding: 10px;
+  &__image-container {
+    @include flex(row, nowrap, space-around);
+  }
+  &__image {
+    width: 45%;
+  }
+  &__paragraphe {
+    font-size: 16px;
+    @media #{$mobile} {
+      font-size: 12px;
+    }
+  }
+  @media #{$mobile} {
+    width: 70%;
+    margin: 10px auto;
+  
+  }
+}

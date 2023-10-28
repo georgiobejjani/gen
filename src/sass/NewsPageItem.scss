@@ -1,0 +1,14 @@
+@import './style.scss';
+.newsPageItem {
+    margin: auto;
+    &__image-container {
+        @include flex(row, nowrap, space-around);
+    }
+    &__image {
+        width: 45%;
+    }
+    &__paragraphe {
+        text-align: justify;
+        line-height: 30px;
+    }
+}

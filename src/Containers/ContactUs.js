@@ -14,9 +14,7 @@ export default function ContactUs() {
       <Header />
       <Hero
         bg={heroContact}
-        title="contact us"
-        subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis
-    scelerisque libero, a consectetur diam blandit id. Maecenas at nibh dui."
+        title="Get in Contact: We're Waiting"
       />
       <div className="contactUs">
         <div className="contactUs__items">
