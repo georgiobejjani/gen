@@ -8,7 +8,7 @@ import PartnerCard from "../Components/PartnerCard/PartnerCard";
 import Header from "../Components/Header/Header";
 import Hero from "../Components/Hero/Hero";
 import Footer from "../Components/Footer/Footer";
-import dnaClosely from "../assets/dna-closely.jpg";
+import TeamBanner from '../assets/ourteam_Banner.jpg';
 export default function Partners() {
   const [active, setActive] = useState(1);
   const [page, setPage] = useState();
@@ -120,13 +120,14 @@ export default function Partners() {
   return (
     <>
       <Header />
-      <Hero bg={dnaClosely} title={title1} subTitle="" />
+      <Hero bg={TeamBanner} title={title1} subTitle="" />
 
       <div className="partners-page">
         <ul className="partners-page__menu">
-          {partnersGroup.map((value) => {
+          {partnersGroup.map((value,index) => {
             return (
               <li
+              key={index}
                 className={
                   "partners-page__menuItem " +
                   [active === value.id ? "activatedItem" : ""]

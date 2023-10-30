@@ -21,7 +21,7 @@
     transition: max-height 0.7s ease;
   }
   .expandContainer {
-    max-height: 800px;
+    max-height: 1200px;
     transition: max-height 0.7s ease;
   }
   &__morebutton {
@@ -62,6 +62,7 @@
     text-align: center;
     margin: auto;
     width: 90%;
+    line-height: 30px;
     @media #{$mobTab} {
       font-size: 14px;
     }
@@ -121,6 +122,7 @@ margin-top: 20px;
     font-family: $secondaryFont;
     text-align: center;
     margin: auto;
+    line-height: 30px;
     @media #{$mobile} {
       font-size: 14px;
     }

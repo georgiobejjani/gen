@@ -33,9 +33,20 @@ export default function NewsBlocks() {
     <div className='newsBlocks'>
         <Slider {...settings}>
 
-    {NewsObject.map((value) => {
+      <div className="newsBlocks__Iframe">
+        <iframe
+          width="100%"
+          height="400"
+          src="https://www.youtube.com/embed/4kuYQwfmUTc?si=5BII8NFSKCRFvsaK"
+          title="Stephen's Pretty Sure George Church Said He's Going To Live Forever"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+      </div>
+    {NewsObject.map((value,index) => {
         return (
           <News
+            key={index}
             images={value.images}
             paragraphe={value.news}
             link={value.link}
@@ -46,17 +57,6 @@ export default function NewsBlocks() {
         );
       })}
 
-      <div className="newsBlocks__Iframe">
-        <iframe
-          width="100%"
-          height="400"
-          src="https://www.youtube.com/embed/4kuYQwfmUTc?si=5BII8NFSKCRFvsaK"
-          title="Stephen's Pretty Sure George Church Said He's Going To Live Forever"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </div>
       </Slider>
 
       </div>

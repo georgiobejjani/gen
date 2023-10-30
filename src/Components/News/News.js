@@ -4,9 +4,9 @@ export default function News(props) {
   return (
     <div className="news-container">
       <div className="news-container__image-container">
-        {props.images.map((value) => {
+        {props.images.map((value,index) => {
           return (
-            <img src={value} alt="image1" className="news-container__image" />
+            <img key={index} src={value} alt="image1" className="news-container__image" />
           );
         })}
       </div>

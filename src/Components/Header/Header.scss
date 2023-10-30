@@ -42,8 +42,15 @@
     padding: 5px;
     display: block;
     font-weight: 500;
-    &:hover {
+    &:hover,
+    &:active {
       color: #0f7f40;
+    }
+    @media #{$mobile} {
+      &:first-child {
+        margin: 0;
+      }
+      margin: auto;
     }
   }
   .active-link {
@@ -58,8 +65,8 @@
     @media #{$mobile} {
       display: block;
       position: relative;
-      width: fit-content;
       margin: auto;
+      text-align: center;
     }
   }
 
@@ -70,37 +77,42 @@
     color: $black;
     display: block;
     cursor: pointer;
-    &:first-child {
-      margin-left: 0;
-      position: relative;
-      &::after {
-        content: "";
-        position: absolute;
-        top: 10px;
-        right: -7px;
-        width: 5px;
-        height: 5px;
-        margin-left: 2px;
-        margin-bottom: 10px;
-        border: 2px solid $black;
-        border-bottom: none;
-        border-left: none;
-        transform: rotate(135deg);
-        transition: all ease-out 0.2s;
-      }
-      &:hover {
-        @media screen and (min-width: 768px) {
-            &::after {
-              top: 12px;
-              margin-bottom: 0px;
-              transition: all ease-out 0.2s;
-              transform: rotate(315deg);
-            }
-        }
-      }
-    }
+
     @media #{$mobile} {
       margin: 20px auto 20px auto;
+      font-size: 20px;
+    }
+  }
+  .sublinkArrow {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      width: 5px;
+      height: 5px;
+      margin-left: 5px;
+      margin-bottom: 10px;
+      border: 2px solid $black;
+      border-bottom: none;
+      border-left: none;
+      transform: rotate(135deg);
+      transition: all ease-out 0.2s;
+      @media #{$mobile} {
+        margin-left: 5px;
+        width: 7px;
+        height: 7px;
+      }
+    }
+    &:hover {
+      @media screen and (min-width: 769px) {
+        &::after {
+          top: 12px;
+          margin-bottom: 0px;
+          transition: all ease-out 0.2s;
+          transform: rotate(315deg);
+        }
+      }
     }
   }
   &__sublist {
@@ -115,6 +127,7 @@
     @media #{$mobile} {
       position: relative;
       width: fit-content;
+      padding: 0;
     }
   }
   &__subitem {
@@ -133,6 +146,10 @@
   }
   .opensublist {
     display: block;
+    margin: auto;
+    @media #{$mobile} {
+      width: 100%;
+    }
   }
   .closesublist {
     display: none;
@@ -187,10 +204,12 @@
   .closebtn:nth-child(3) {
     transform: rotate(0) translateY(0);
   }
-  & .header-container__list .header-container__item:first-child:hover .header-container__sublist {
-    @media screen and (min-width: 768px) {
-        display: block;
+  &
+    .header-container__list
+    .header-container__item:first-child:hover
+    .header-container__sublist {
+    @media screen and (min-width: 769px) {
+      display: block;
     }
-  } 
+  }
 }
-

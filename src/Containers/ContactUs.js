@@ -6,7 +6,6 @@ import ContactUsItem from "../Components/ContactUs/ContactUsItem";
 import ContactUsForm from "../Components/ContactUs/ContactUsForm";
 import phoneIcon from "../assets/icons/phone-icon.png";
 import emailIcon from "../assets/icons/email-icon.png";
-import locationIcon from "../assets/icons/location-icon.png";
 import Footer from "../Components/Footer/Footer";
 export default function ContactUs() {
   return (
@@ -14,29 +13,19 @@ export default function ContactUs() {
       <Header />
       <Hero
         bg={heroContact}
-        title="Get in Contact: We're Waiting"
+        title="Contact us"
       />
       <div className="contactUs">
         <div className="contactUs__items">
           <ContactUsItem
             image={phoneIcon}
             label="Phone Number"
-            value="+0123 456789 000"
+            value="+971 50 4511816"
           />
           <ContactUsItem
             image={emailIcon}
             label="Email Address"
-            value="test@hotmail.com"
-          />
-          <ContactUsItem
-            image={phoneIcon}
-            label="Fax Address"
-            value="+0123 456789 000"
-          />
-          <ContactUsItem
-            image={locationIcon}
-            label="Location"
-            value="123Beirut, Lebanon"
+            value="contact-us@gen-mea.com"
           />
         </div>
         <ContactUsForm />

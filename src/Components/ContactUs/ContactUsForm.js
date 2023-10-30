@@ -70,15 +70,11 @@ export default function ContactUsForm() {
       )}
       <div className="contactusBlock">
         <h1 className="contactusBlock__title">Send Message</h1>
-        <p className="contactusBlock__paragraphe">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          mattis scelerisque libero, a consectetur diam blandit id. Maecenas at
-          nibh dui.
-        </p>
         <form ref={form} className="contactusBlock__form" onSubmit={submitForm}>
           <div className="contactusBlock__inputWrapper">
             <div className="contactusBlock__first-block">
               <input
+                required
                 type="text"
                 name="fullName"
                 placeholder="Your Name"
@@ -87,6 +83,7 @@ export default function ContactUsForm() {
                 className="contactusBlock__inputField"
               />
               <input
+                required
                 type="text"
                 name="phoneNumber"
                 placeholder="Phone Number"
@@ -97,6 +94,7 @@ export default function ContactUsForm() {
             </div>
             <div className="contactusBlock__second-block">
               <input
+                required
                 type="text"
                 name="email"
                 placeholder="Email"
@@ -105,6 +103,7 @@ export default function ContactUsForm() {
                 className="contactusBlock__inputField"
               />
               <input
+                required
                 type="text"
                 name="subject"
                 placeholder="Subject"
@@ -115,6 +114,7 @@ export default function ContactUsForm() {
             </div>
           </div>
           <textarea
+            required
             name="message"
             placeholder="Message"
             value={message}

@@ -12,6 +12,7 @@
 @import "./Components/PartnerCard/partnerCard.scss";
 @import "./Components/News/News.scss";
 @import "./sass/NewsPageItem.scss";
+@import "./Components/CapabilitiesItem/CapabilitiesItem.scss";
 body {
   cursor: url("./assets/double-helix-svgrepo-com.svg") 16 16, auto;
   padding: 0;
@@ -98,4 +99,10 @@ body {
       }
     }
   }
+}
+
+.capabilities {
+  @include flex(row, wrap, space-between);
+  width: 70%;
+  margin: auto;
 }

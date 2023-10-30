@@ -2,7 +2,9 @@
 
 .contactUs {
   margin: 20px 0;
-  background-color: #eeeeee;
   padding: 40px 0;
   @include flex(row, nowrap, center);
+  @media #{$mobTab} {
+    display: block;
+  }
 }

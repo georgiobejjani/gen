@@ -11,16 +11,15 @@ export default function Header() {
       setmobilemenu("open");
       setbtnstate("open");
     } else {
-        setSublistOpen(false);
+      setSublistOpen(false);
       setmobilemenu("closed");
       setbtnstate("closed");
     }
   };
 
-    const toggleSubList = () => {
+  const toggleSubList = () => {
     setSublistOpen(!sublistOpen);
   };
-
 
   return (
     <header className="header-container">
@@ -40,13 +39,15 @@ export default function Header() {
             }
           >
             <ul className="header-container__list">
-              <li
-                className={
-                  "header-container__item " + [sublistOpen ? "arrowopen" : ""]
-                }
-                onClick={toggleSubList}
-              >
-                <Link className="header-container__link">who we are</Link>
+              <li className={"header-container__item "} onClick={toggleSubList}>
+                <Link
+                  className={
+                    "header-container__link sublinkArrow " +
+                    [sublistOpen ? "arrowopen" : ""]
+                  }
+                >
+                  who we are
+                </Link>
                 <ul
                   className={
                     "header-container__sublist " +
@@ -54,25 +55,37 @@ export default function Header() {
                   }
                 >
                   <li className="header-container__subitem">
-                    <Link className="header-container__link" to="/aboutus">About us</Link>
+                    <Link className="header-container__link" to="/aboutus">
+                      About us
+                    </Link>
                   </li>
                   <li className="header-container__subitem">
-                    <Link className="header-container__link" to="/team">Management Team</Link>
+                    <Link className="header-container__link" to="/team">
+                      Management Team
+                    </Link>
                   </li>
                   <li className="header-container__subitem">
-                    <Link className="header-container__link" to="/capabilities">Capabilities</Link>
+                    <Link className="header-container__link" to="/capabilities">
+                      Capabilities
+                    </Link>
                   </li>
                 </ul>
               </li>
 
               <li className="header-container__item">
-                <Link className="header-container__link" to='/news'>news</Link>
+                <Link className="header-container__link" to="/news">
+                  news
+                </Link>
               </li>
               <li className="header-container__item">
-                <Link className="header-container__link" to="/partners">partners</Link>
+                <Link className="header-container__link" to="/partners">
+                  partners
+                </Link>
               </li>
               <li className="header-container__item">
-                <Link className="header-container__link" to='/contactUs'>contact us</Link>
+                <Link className="header-container__link" to="/contactUs">
+                  contact us
+                </Link>
               </li>
             </ul>
           </nav>

@@ -11,7 +11,7 @@ export default function TeamPage() {
   return (
     <>
     <Header/>
-    <Hero bg={TeamBanner} title='Bridging Brilliance' subTitle="The GEN team" />
+    <Hero bg={TeamBanner} title='The GEN team' />
 
     <div className="sectionContainer__team">
             <TeamCard

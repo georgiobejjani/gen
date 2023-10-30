@@ -9,7 +9,6 @@ export default function NewsPageItem() {
   const location = useLocation();
   const news = JSON.parse(location.state.newsGen);
   const [newsItem,setNewsItem] = useState([]);
-  console.log("news", news);
   const id3News = (
     <span>
       GEN and SPIRE ADVISORY GROUP Announce Strategic Partnership Agreement
@@ -64,14 +63,15 @@ if(news===3) {
   return (
     <>
     <Header/>
-      {newsItem ? newsItem.map((value) => {
+      {newsItem ? newsItem.map((value,index) => {
         return (
-            <div className="container">
+            <div key={index}
+            className="container">
              <div className="newsPageItem">
       <div className="newsPageItem__image-container">
-        {value.images.map((value) => {
+        {value.images.map((value,index) => {
           return (
-            <img src={value} alt="image1" className="newsPageItem__image" />
+            <img key={index} src={value} alt="image1" className="newsPageItem__image" />
           );
         })}
       </div>

@@ -1,0 +1,42 @@
+@import '../../sass/style.scss';
+
+.capabilitiesItem {
+    width: fit-content;
+    height: fit-content;
+    margin: 10px;
+    @media #{$mobile} {
+        margin: auto;
+    }
+    &__wrapper {
+        position: relative;
+    }
+    &__gear_wheel {
+        height: 200px;
+        width: 200px;
+        background-image: url('../../assets/capabilities/gear-wheel.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: rotateGear 5s linear infinite;
+    }
+    &__imageItem {
+        height: 70px;
+        @include center_middle_align();
+        position: absolute;
+    }
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+  }
+
+
+  @keyframes rotateGear {
+    0% {
+      transform: rotate(0deg); /* Start with no rotation */
+    }
+    100% {
+      transform: rotate(360deg); /* Rotate the gear 360 degrees */
+    }
+  }
