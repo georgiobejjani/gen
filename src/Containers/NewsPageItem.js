@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import genLogo from "../assets/logoWebsite.png";
 import advisoryLogo from "../assets/partners/spireAdvisoryLogo.png";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 
 export default function NewsPageItem() {
-  const location = useLocation();
-  const news = JSON.parse(location.state.newsGen);
-  const [newsItem,setNewsItem] = useState([]);
+  const { id } = useParams();
+  const [newsItem, setNewsItem] = useState([]);
+
   const id3News = (
     <span>
       GEN and SPIRE ADVISORY GROUP Announce Strategic Partnership Agreement
@@ -55,34 +55,38 @@ export default function NewsPageItem() {
   ];
 
   useEffect(() => {
-if(news===3) {
-    setNewsItem(inPageNews1);
-} else setNewsItem([]);
-  },[news])
-  
+    if (id === "3") {
+      setNewsItem(inPageNews1);
+    } else setNewsItem([]);
+  }, [id]);
+
   return (
     <>
-    <Header/>
-      {newsItem ? newsItem.map((value,index) => {
-        return (
-            <div key={index}
-            className="container">
-             <div className="newsPageItem">
-      <div className="newsPageItem__image-container">
-        {value.images.map((value,index) => {
-          return (
-            <img key={index} src={value} alt="image1" className="newsPageItem__image" />
-          );
-        })}
-      </div>
-      <p className="newsPageItem__paragraphe">
-        {value.news}
-      </p>
-    </div>
-    </div>
-        );
-      }) : ''}
-      <Footer/>
+      <Header />
+      {newsItem
+        ? newsItem.map((value, index) => {
+            return (
+              <div key={index} className="container">
+                <div className="newsPageItem">
+                  <div className="newsPageItem__image-container">
+                    {value.images.map((value, index) => {
+                      return (
+                        <img
+                          key={index}
+                          src={value}
+                          alt="image1"
+                          className="newsPageItem__image"
+                        />
+                      );
+                    })}
+                  </div>
+                  <p className="newsPageItem__paragraphe">{value.news}</p>
+                </div>
+              </div>
+            );
+          })
+        : ""}
+      <Footer />
     </>
   );
 }

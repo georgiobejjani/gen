@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import websiteLogo from "../../assets/logoWebsite.png";
 import { Link } from "react-router-dom";
 export default function Header() {

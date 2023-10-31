@@ -5,12 +5,7 @@ import Footer from "../Components/Footer/Footer";
 import Hero from "../Components/Hero/Hero";
 import dnaNews from "../assets/gene-banner.png";
 export default function NewsPage() {
-    const title1 = (
-        <span>
-          Leading the Biotech Revolution <br />
-          in the Middle East
-        </span>
-      );
+ 
   return (
     <>
       <Header />

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import teamIcon from '../../assets/icons/iconTeam.png';
 import peopleIcon from '../../assets/icons/peopleIcon.png';
 import experienceIcon from '../../assets/icons/iconExperience.png';

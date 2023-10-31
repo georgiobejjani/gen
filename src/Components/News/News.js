@@ -21,7 +21,7 @@ export default function News(props) {
           ""
         )}
         {props.inPageLink === true ? (
-          <Link to={`/news/${props.id}`} state={{ newsGen: props.id }}>
+          <Link to={`/news/${props.id}`} >
             Read more...
           </Link>
         ) : (

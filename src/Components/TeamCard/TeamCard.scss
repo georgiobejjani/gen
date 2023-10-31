@@ -8,7 +8,7 @@
   box-sizing: border-box;
   background: $white;
   border-radius: 20px;
-  // box-shadow: 1px 0px 0px rgba(255, 255, 255, 0.45), -2px 3px 0px rgba(94, 104, 121, 0.3);  
+  transition: all 0.5s ease;
   @media #{$mobile} {
     width: 330px;
   }
@@ -45,25 +45,6 @@
     width: 100%;
     min-height: 150px;
   }
-  // &__actionContainer {
-  //   width: 50px;
-  //   height: 50px;
-  //   background-color: white;
-  //   border-radius: 100%;
-  //   position: absolute;
-  //   right: 0;
-  //   bottom: 0;
-  //   -webkit-box-shadow: -5px 10px 15px -3px rgba(0,0,0,0.1);
-  //   -moz-box-shadow: -5px 10px 15px -3px rgba(0,0,0,0.1);
-  //   box-shadow: -5px 10px 15px -3px rgba(0,0,0,0.1);
-
-  // }
-  // &__arrow {
-  //   height: 30px;
-  //   @include center_middle_align();
-  //   position:absolute;
-   
-  // }
  &__Name {
     text-transform: uppercase;
     display: block;
@@ -80,46 +61,3 @@
     text-align: center;
 }
 }
-
-// .infoContainer {
-//     position: fixed;
-//     background-color: white;
-//     @include flex(row,nowrap,flex-start);
-//     min-height: 400px;
-//     width: 50%;
-//     z-index: 100;
-//     border-radius: 15px;
-//     top: -100%; 
-//     transition: all ease 1s;
-//     @media #{$tablet} {
-//         width: 70%;
-//     }
-//     @media #{$mobile} {
-//         width: 90%;
-//     }
-//     &__wrapper {
-//     margin-left: 40px;
-//     }
-//   &__closeContainer {
-//     position: absolute;
-//     width: 50px;
-//     height: 50px;
-//     background-color: $white;
-//     text-align: center;
-//     line-height: 40px;
-//     border-radius: 100%;
-//     font-size: 30px;
-//     right: -15px;
-//     top: -15px;
-//     cursor: pointer;
-//   }
-//   &__infoWrapper {
-//     height: 200px;
-//     overflow: auto;
-//   }
-// }
-
-// .fade-in {
-//     top: 15%;
-//     transition: all ease 1s;
-//   }
