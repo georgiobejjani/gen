@@ -15,6 +15,7 @@
   }
   &__paragraphe {
     font-size: 16px;
+    line-height: 30px;
     @media #{$mobile} {
       font-size: 12px;
     }

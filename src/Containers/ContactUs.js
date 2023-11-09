@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../Components/Header/Header";
+import Header from "../Components/Header/Header2";
 import Hero from "../Components/Hero/Hero";
-import heroContact from "../assets/contactUs-banner.png";
+import contactBanner from "../assets/banners/contactUs-banner.jpg";
 import ContactUsItem from "../Components/ContactUs/ContactUsItem";
 import ContactUsForm from "../Components/ContactUs/ContactUsForm";
 import phoneIcon from "../assets/icons/phone-icon.png";
@@ -12,8 +12,7 @@ export default function ContactUs() {
     <>
       <Header />
       <Hero
-        bg={heroContact}
-        title="Contact us"
+        bg={contactBanner}
       />
       <div className="contactUs">
         <div className="contactUs__items">

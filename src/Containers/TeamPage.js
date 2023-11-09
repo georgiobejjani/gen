@@ -1,17 +1,17 @@
 import React from 'react'
-import Header from '../Components/Header/Header'
+import Header from '../Components/Header/Header2'
 import Footer from '../Components/Footer/Footer'
 import TeamCard from '../Components/TeamCard/TeamCard'
 import ceo_Photo from "../assets/abboudBejjaniTeam.png";
 import VP from "../assets/hichamJorioTeam.png";
 import investor from "../assets/linaAnwarTeam.png";
 import Hero from '../Components/Hero/Hero';
-import TeamBanner from '../assets/ourteam_Banner.jpg';
+import teamBanner from '../assets/banners/ourteam_Banner.jpg';
 export default function TeamPage() {
   return (
     <>
     <Header/>
-    <Hero bg={TeamBanner} title='The GEN team' />
+    <Hero bg={teamBanner} />
 
     <div className="sectionContainer__team">
             <TeamCard

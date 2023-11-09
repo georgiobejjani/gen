@@ -5,10 +5,10 @@ import dxnowLogo from "../assets/partners/dxnowLogo-removebg-preview.png";
 import hopeaiLogo from "../assets/partners/hopeAiLogo.png";
 import spireadvisoryLogo from "../assets/partners/spireAdvisoryLogo.png";
 import PartnerCard from "../Components/PartnerCard/PartnerCard";
-import Header from "../Components/Header/Header";
+import Header from "../Components/Header/Header2";
 import Hero from "../Components/Hero/Hero";
 import Footer from "../Components/Footer/Footer";
-import TeamBanner from '../assets/ourteam_Banner.jpg';
+import partnersBanner from '../assets/banners/partners-banner.jpg';
 export default function Partners() {
   const [active, setActive] = useState(1);
   const [page, setPage] = useState();
@@ -85,24 +85,24 @@ export default function Partners() {
     switch (active) {
       case 1: {
         setPage(
-          <PartnerCard image={spireadvisoryLogo} paragraphe={spireGroup} />
+          <PartnerCard image={spireadvisoryLogo} paragraphe={spireGroup} link="https://spireadvisorygroup.com/"/>
         );
         break;
       }
       case 2: {
-        setPage(<PartnerCard image={mawiLogo} paragraphe={mawi} />);
+        setPage(<PartnerCard image={mawiLogo} paragraphe={mawi} link="https://www.mawidna.com/"/>);
         break;
       }
       case 3: {
-        setPage(<PartnerCard image={hopeaiLogo} paragraphe={hopeai} />);
+        setPage(<PartnerCard image={hopeaiLogo} paragraphe={hopeai} link="https://hopeai.org/"/>);
         break;
       }
       case 4: {
-        setPage(<PartnerCard image={dnamitoLogo} paragraphe={dnamito} />);
+        setPage(<PartnerCard image={dnamitoLogo} paragraphe={dnamito} link="https://dnamito.com/"/>);
         break;
       }
       case 5: {
-        setPage(<PartnerCard image={dxnowLogo} paragraphe={dxnow} />);
+        setPage(<PartnerCard image={dxnowLogo} paragraphe={dxnow} link="https://www.zymotfertility.com/"/>);
         break;
       }
       default: {
@@ -120,7 +120,7 @@ export default function Partners() {
   return (
     <>
       <Header />
-      <Hero bg={TeamBanner} title={title1} subTitle="" />
+      <Hero bg={partnersBanner}/>
 
       <div className="partners-page">
         <ul className="partners-page__menu">

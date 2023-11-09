@@ -37,10 +37,57 @@ body {
   margin: auto;
 }
 
-.test2 {
+.heroSection {
+  position: relative;
+}
+
+.heroSection__caption {
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translate(-50%);
+height: 100px;
+@media #{$mobile} {
+  height: 60px;
+}
+}
+
+.capabilitiesLabel,.newsLabel {
+  bottom: 40%;
+  right: 5%;
+  left: auto;
+  transform: none;
+  height: 150px;
+  @media #{$mobile} {
+    height: 60px;
+    right: auto;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+.newsLabel {
+  height: 90px;
+  @media #{$mobile} {
+    height: 50px;
+  }
+}
+
+.header-video {
+  box-sizing: border-box;
+  clip-path: polygon(30% 0, 100% 7%, 100% 100%, 100% 92%, 70% 100%, 0 93%, 0 8%);
+
+  & video {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.homepageHeader {
   font-weight: 400;
   font-size: 40px;
   text-align: center;
+  text-transform: uppercase;
   &::after {
     content: " News";
     color: #0f7f40;

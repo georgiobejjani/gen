@@ -6,6 +6,7 @@
     font-family: $secondaryFont;
     font-weight: 400;
     text-align: center;
+    text-transform: uppercase;
   }
   &__title::after {
     content: ' GEN';
@@ -114,7 +115,7 @@ margin-top: 20px;
     color: #0f7f40;
   }
   .vission::after {
-    content: ' Vission';
+    content: ' Vision';
     color: #0f7f40;
   }
   &__paragraphe {

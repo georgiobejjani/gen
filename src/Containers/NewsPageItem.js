@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import genLogo from "../assets/logoWebsite.png";
 import advisoryLogo from "../assets/partners/spireAdvisoryLogo.png";
-import Header from "../Components/Header/Header";
+import Header from "../Components/Header/Header2";
 import Footer from "../Components/Footer/Footer";
 
 export default function NewsPageItem() {
