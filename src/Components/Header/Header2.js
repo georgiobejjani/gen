@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import genLogo from "../../assets/logoWebsite.png";
+import homeIcon from "../../assets/icons/home.png"
 import { Link } from "react-router-dom";
 
 export default function Header2() {
     const [mobileMenu, setMobileMenu] = useState(false);
-    const [subMenu,setSubMenu] = useState(false);
+    // const [subMenu,setSubMenu] = useState(false);
 
   const openmobilemenu = () => {
     if (mobileMenu) {
@@ -12,11 +13,11 @@ export default function Header2() {
     } else setMobileMenu(true);
   };
 
-  const openSubMenu = () => {
-    if(subMenu) {
-        setSubMenu(false);
-    } else setSubMenu(true);
-  }
+  // const openSubMenu = () => {
+  //   if(subMenu) {
+  //       setSubMenu(false);
+  //   } else setSubMenu(true);
+  // }
 
   return (
     <header className="header">
@@ -28,7 +29,7 @@ export default function Header2() {
           <nav className={"header__navbar " +
               [mobileMenu ? "openMobileMenu" : ""]}>
             <ul className="header__list">
-              <li className={"header__item submenu " + [subMenu ? 'openArrow' : 'closeArrow']}onClick={openSubMenu}>
+              {/* <li className={"header__item submenu " + [subMenu ? 'closeArrow' : 'openArrow']}onClick={openSubMenu}>
                 who we are
                 <ul className={"header__sub-List " + [subMenu ? 'openSubmenu' : '']}> 
                   <li className="header__subItem">
@@ -43,6 +44,15 @@ export default function Header2() {
                     <Link className="header__link" to="/team">Management Team</Link>
                   </li>
                 </ul>
+              </li> */}
+              <li className="header__item">
+                <Link className="header__link" to="/aboutus">about us</Link>
+              </li>
+              <li className="header__item">
+                <Link className="header__link" to="/capabilities">capabilities</Link>
+              </li>
+              <li className="header__item">
+                <Link className="header__link" to="/team">Team</Link>
               </li>
               <li className="header__item">
                 <Link className="header__link" to="/news">news</Link>
@@ -55,6 +65,9 @@ export default function Header2() {
               </li>
             </ul>
           </nav>
+          <Link to="/" className="header__homeLink">
+            <img src={homeIcon} className="header__homeIcon" alt="home icon"/>
+          </Link>
           <div
             className="header__burgerMenu-Container"
             onClick={openmobilemenu}

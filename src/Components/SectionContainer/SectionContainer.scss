@@ -12,9 +12,13 @@
     font-family: $secondaryFont;
     color: $black;
     text-transform: uppercase;
+    color:#201e5f;
     &::after {
       content: " Team";
       color: #0f7f40;
+    }
+    @media #{$mobile} {
+      font-size: 30px;
     }
   }
   &__teamInfo {
@@ -101,9 +105,13 @@
     color: $black;
     margin-bottom: 10px;
     text-transform: uppercase;
+    color:#201e5f;
     &::after {
       content: " Partners";
       color: #0f7f40;
+    }
+    @media #{$mobile} {
+      font-size: 30px;
     }
   }
   &__subButton {

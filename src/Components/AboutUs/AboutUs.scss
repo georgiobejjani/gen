@@ -7,6 +7,10 @@
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
+    color:#201e5f;
+    @media #{$mobile} {
+      font-size: 30px;
+    }
   }
   &__title::after {
     content: ' GEN';
@@ -71,7 +75,8 @@
 }
 
 .values-container {
-@include flex();
+@include flex(row,wrap);
+align-items: flex-start;
 margin-top: 20px;
 @media #{$mobile} {
   display: block;
@@ -87,15 +92,11 @@ margin-top: 20px;
  min-height: 460px;
  &:first-child {
   margin-left: 0;
-  @media #{$mobile} {
-    margin: 0 auto 0 auto;
-    height: auto;
-
-  }
  }
  @media #{$mobile} {
   margin: 20px auto 0 auto;
   width: 90%;
+  min-height: fit-content;
  }
 &__image {
     height: 100px;
@@ -109,6 +110,8 @@ margin-top: 20px;
     color: $black;
     margin-bottom: 20px;
     font-family: $secondaryFont;
+    color:#201e5f;
+
   }
   .mission::after {
     content: ' Mission';

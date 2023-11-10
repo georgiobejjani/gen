@@ -12,13 +12,6 @@
   @media #{$mobile} {
     width: 330px;
   }
-  &:hover {
-    transform: scale(1.1);
-    transition: all 0.5s ease;
-    @media #{$mobile} {
-      transform: none;
-    }
-  }
   &__iconInfo {
     height: 30px;
   }

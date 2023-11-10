@@ -197,6 +197,7 @@
     height: 80px;
   }
   &__navbar {
+    margin-right:70px ;
     @media #{$mobile} {
       height: 0;
       background-color: $white;
@@ -208,6 +209,7 @@
       right: 0;
       overflow-y: scroll;
       z-index: 100;
+      margin-right: 0;
     }
     &::-webkit-scrollbar {
       width: 0;
@@ -248,7 +250,6 @@
     color: #201e5f;
     cursor: pointer;
     &:nth-child(1) {
-      margin-right: 20px;
       @media #{$mobile} {
         margin: auto;
       }
@@ -275,6 +276,9 @@
     }
     @media #{$mobile} {
       font-size: 25px;
+    }
+    @media #{$tablet} {
+      font-size: 14px;
     }
   }
   .openSubmenu {
@@ -416,5 +420,15 @@
 
   .closebtn:nth-child(3) {
     transform: rotate(0) translateY(0);
+  }
+  &__homeLink {
+    position: absolute;
+    right: 50px;
+    @media #{$mobile} {
+      right: 80px;
+    }
+  }
+  &__homeIcon {
+    width:30px;
   }
 }
